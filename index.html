@@ -30,20 +30,21 @@
       bg              Background color
       fg              Foreground / text color
       accent          Accent color (used for the pulsing header dot)
+      help            Array of 3 strings: concrete first steps      (optional)
   ═══════════════════════════════════════════════════════════════════
   -->
   <script id="activity-data" type="application/json">
   [
-    { "text": "Learn the history behind the Three Kingdoms period of ancient China.", "fontFamily": "'Cinzel', serif", "fontSize": "clamp(1.8rem, 4.5vw, 4rem)", "fontWeight": "700", "letterSpacing": "0.04em", "bg": "#1c1410", "fg": "#e8c87c", "accent": "#b8853a" },
-    { "text": "Cook one recipe from a country you've never visited.", "fontFamily": "'Shrikhand', cursive", "fontSize": "clamp(2rem, 5.5vw, 5rem)", "fontWeight": "400", "letterSpacing": "-0.01em", "bg": "#f7d046", "fg": "#5a1a00", "accent": "#d94f2b" },
-    { "text": "WRITE A LETTER TO YOURSELF TEN YEARS FROM NOW.", "fontFamily": "'VT323', monospace", "fontSize": "clamp(2.2rem, 6vw, 5.5rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#0a0e27", "fg": "#7fffa8", "accent": "#ff4081" },
+    { "text": "Learn the history behind the Three Kingdoms period of ancient China.", "fontFamily": "'Cinzel', serif", "fontSize": "clamp(1.8rem, 4.5vw, 4rem)", "fontWeight": "700", "letterSpacing": "0.04em", "bg": "#1c1410", "fg": "#e8c87c", "accent": "#b8853a", "help": ["Start with Wikipedia's 'Three Kingdoms' article — read just the intro and look at the map.", "Search YouTube for 'Three Kingdoms history' and pick any video under 20 minutes.", "Read the opening sentence of Romance of the Three Kingdoms, the world's longest novel."] },
+    { "text": "Cook one recipe from a country you've never visited.", "fontFamily": "'Shrikhand', cursive", "fontSize": "clamp(2rem, 5.5vw, 5rem)", "fontWeight": "400", "letterSpacing": "-0.01em", "bg": "#f7d046", "fg": "#5a1a00", "accent": "#d94f2b", "help": ["Pick any country on a map — go with your gut, not your comfort zone.", "Search '[country] easy traditional recipe' and read the first three results.", "Check you have at least two of the main ingredients before you commit to a dish."] },
+    { "text": "WRITE A LETTER TO YOURSELF TEN YEARS FROM NOW.", "fontFamily": "'VT323', monospace", "fontSize": "clamp(2.2rem, 6vw, 5.5rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#0a0e27", "fg": "#7fffa8", "accent": "#ff4081", "help": ["Open a blank doc and write: 'Dear [your name] in [year],'", "Answer three things: where are you now, what worries you, what do you hope for?", "Email it to yourself with the subject 'Open in [year]' — or use futureme.org."] },
     { "text": "memorize a poem and recite it out loud to no one.", "fontFamily": "'Caveat', cursive", "fontSize": "clamp(2.4rem, 6.5vw, 6rem)", "fontWeight": "700", "letterSpacing": "0", "bg": "#f5e6d3", "fg": "#3a2818", "accent": "#8b4513" },
     { "text": "Build a tiny paper boat and float it in a sink.", "fontFamily": "'Abril Fatface', serif", "fontSize": "clamp(2.2rem, 5.8vw, 5.5rem)", "fontWeight": "400", "letterSpacing": "-0.01em", "bg": "#a8d8ea", "fg": "#1e3a5f", "accent": "#ff6b6b" },
     { "text": "Watch a documentary about deep sea creatures.", "fontFamily": "'Major Mono Display', monospace", "fontSize": "clamp(1.4rem, 3.5vw, 3.2rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#001a2e", "fg": "#4dd0e1", "accent": "#ffb74d" },
     { "text": "Sketch every object on your desk in two minutes each.", "fontFamily": "'Fraunces', serif", "fontSize": "clamp(2rem, 5.2vw, 4.8rem)", "fontWeight": "900", "letterSpacing": "-0.02em", "bg": "#fff8e7", "fg": "#2c1810", "accent": "#d4a574" },
-    { "text": "LEARN TO TIE FIVE DIFFERENT KNOTS", "fontFamily": "'Bungee Shade', cursive", "fontSize": "clamp(1.8rem, 4.8vw, 4.5rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#e63946", "fg": "#fffbea", "accent": "#1d3557" },
+    { "text": "LEARN TO TIE FIVE DIFFERENT KNOTS", "fontFamily": "'Bungee Shade', cursive", "fontSize": "clamp(1.8rem, 4.8vw, 4.5rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#e63946", "fg": "#fffbea", "accent": "#1d3557", "help": ["Grab any rope, cord, or shoelace — even a phone charger cable works.", "Search 'how to tie a bowline knot' on YouTube and start with that one.", "Master one knot completely before moving on — sequence matters more than speed."] },
     { "text": "Read about the origins of the word 'serendipity'.", "fontFamily": "'Playfair Display', serif", "fontSize": "clamp(2rem, 5.2vw, 4.8rem)", "fontWeight": "900", "letterSpacing": "-0.015em", "bg": "#2d1b3d", "fg": "#f4d35e", "accent": "#ee964b" },
-    { "text": "PLAN A FAKE HEIST FOR AN IMAGINARY MUSEUM", "fontFamily": "'Tourney', sans-serif", "fontSize": "clamp(1.8rem, 4.6vw, 4.4rem)", "fontWeight": "900", "letterSpacing": "0.04em", "bg": "#0d0d0d", "fg": "#ff2e63", "accent": "#08d9d6" },
+    { "text": "PLAN A FAKE HEIST FOR AN IMAGINARY MUSEUM", "fontFamily": "'Tourney', sans-serif", "fontSize": "clamp(1.8rem, 4.6vw, 4.4rem)", "fontWeight": "900", "letterSpacing": "0.04em", "bg": "#0d0d0d", "fg": "#ff2e63", "accent": "#08d9d6", "help": ["Pick a real famous museum as your target — the Louvre, the British Museum, the Met.", "Decide exactly what you're stealing and write one sentence on why your character wants it.", "Sketch a rough floor plan and mark the guard posts, cameras, and emergency exits."] },
     { "text": "neon dreams", "subtitle": "Design a fictional 80s arcade game and name every character.", "fontFamily": "'Monoton', cursive", "fontSize": "clamp(3rem, 8vw, 7rem)", "fontWeight": "400", "letterSpacing": "0.05em", "bg": "#16003b", "fg": "#ff10f0", "accent": "#39ff14" },
     { "text": "Memorize the names of all eight planets in reverse order.", "fontFamily": "'Eczar', serif", "fontSize": "clamp(2rem, 5vw, 4.6rem)", "fontWeight": "700", "letterSpacing": "-0.01em", "bg": "#1a0033", "fg": "#ffd700", "accent": "#ff6ec7" },
     { "text": "ye olde tavern crawl —", "subtitle": "Research what people ate and drank in medieval taverns.", "fontFamily": "'UnifrakturMaguntia', cursive", "fontSize": "clamp(2.8rem, 7vw, 6rem)", "fontWeight": "400", "letterSpacing": "0", "bg": "#3d2817", "fg": "#f5deb3", "accent": "#8b0000" },
@@ -56,21 +57,21 @@
     { "text": "rearrange the furniture in one room.", "fontFamily": "'Caveat', cursive", "fontSize": "clamp(2.6rem, 7vw, 6.5rem)", "fontWeight": "700", "letterSpacing": "0", "bg": "#e8d5c4", "fg": "#3e2723", "accent": "#795548" },
     { "text": "TIME YOURSELF SOLVING A RUBIK'S CUBE.", "fontFamily": "'VT323', monospace", "fontSize": "clamp(2rem, 5.2vw, 4.8rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#0f3460", "fg": "#e94560", "accent": "#f5d547" },
     { "text": "Watch the sunset without your phone for twenty minutes.", "fontFamily": "'Abril Fatface', serif", "fontSize": "clamp(1.8rem, 4.6vw, 4.2rem)", "fontWeight": "400", "letterSpacing": "-0.01em", "bg": "#fcb045", "fg": "#3a0ca3", "accent": "#fd1d1d" },
-    { "text": "origami crane", "subtitle": "Fold a paper crane. Then fold nine more for a flock.", "fontFamily": "'Monoton', cursive", "fontSize": "clamp(3rem, 8vw, 7rem)", "fontWeight": "400", "letterSpacing": "0.04em", "bg": "#caf0f8", "fg": "#03045e", "accent": "#ef476f" },
+    { "text": "origami crane", "subtitle": "Fold a paper crane. Then fold nine more for a flock.", "fontFamily": "'Monoton', cursive", "fontSize": "clamp(3rem, 8vw, 7rem)", "fontWeight": "400", "letterSpacing": "0.04em", "bg": "#caf0f8", "fg": "#03045e", "accent": "#ef476f", "help": ["Find a square piece of paper — 15×15cm is ideal, but any square works.", "Search 'origami crane beginner tutorial' on YouTube and watch the whole thing first.", "Pause the video at each step, fold, then continue — resist skipping ahead."] },
     { "text": "Listen to an entire album with eyes closed and lights off.", "fontFamily": "'Playfair Display', serif", "fontSize": "clamp(1.7rem, 4.4vw, 4rem)", "fontWeight": "900", "letterSpacing": "-0.015em", "bg": "#10002b", "fg": "#c77dff", "accent": "#ffd60a" },
-    { "text": "DECODE YOUR DREAMS", "subtitle": "Write down every dream you can remember and look for patterns.", "fontFamily": "'Rampart One', cursive", "fontSize": "clamp(2.4rem, 6vw, 5.5rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#240046", "fg": "#ffba08", "accent": "#ff006e" },
+    { "text": "DECODE YOUR DREAMS", "subtitle": "Write down every dream you can remember and look for patterns.", "fontFamily": "'Rampart One', cursive", "fontSize": "clamp(2.4rem, 6vw, 5.5rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#240046", "fg": "#ffba08", "accent": "#ff006e", "help": ["Put a notebook and pen on your nightstand before you sleep tonight.", "Write the moment you wake up — even just three words counts as a record.", "After five entries, look for any feeling, place, or person that appears more than once."] },
     { "text": "Learn to say 'thank you' in ten different languages.", "fontFamily": "'Eczar', serif", "fontSize": "clamp(1.8rem, 4.6vw, 4.2rem)", "fontWeight": "700", "letterSpacing": "-0.01em", "bg": "#f8edeb", "fg": "#22223b", "accent": "#c9184a" },
     { "text": "Build a blanket fort and read inside it.", "fontFamily": "'Shrikhand', cursive", "fontSize": "clamp(2rem, 5.4vw, 5rem)", "fontWeight": "400", "letterSpacing": "-0.01em", "bg": "#ffe5b4", "fg": "#6f1d1b", "accent": "#bb3e03" },
-    { "text": "Identify five constellations tonight.", "fontFamily": "'Major Mono Display', monospace", "fontSize": "clamp(1.5rem, 3.8vw, 3.4rem)", "fontWeight": "400", "letterSpacing": "0.04em", "bg": "#03071e", "fg": "#ffba08", "accent": "#9d4edd" },
+    { "text": "Identify five constellations tonight.", "fontFamily": "'Major Mono Display', monospace", "fontSize": "clamp(1.5rem, 3.8vw, 3.4rem)", "fontWeight": "400", "letterSpacing": "0.04em", "bg": "#03071e", "fg": "#ffba08", "accent": "#9d4edd", "help": ["Download the free Sky Map or Stellarium app on your phone.", "Go outside after dark and give your eyes two full minutes to adjust.", "Start with Orion's Belt — three bright stars in a straight line — then branch out from there."] },
     { "text": "OUTSIDE → GO", "subtitle": "Walk a route you've never taken before, no destination needed.", "fontFamily": "'Silkscreen', cursive", "fontSize": "clamp(2rem, 5vw, 4.6rem)", "fontWeight": "400", "letterSpacing": "0.1em", "bg": "#52b788", "fg": "#081c15", "accent": "#ffb703" },
     { "text": "Try to draw a perfect circle freehand. Then ten more.", "fontFamily": "'Fraunces', serif", "fontSize": "clamp(1.7rem, 4.4vw, 4rem)", "fontWeight": "900", "letterSpacing": "-0.02em", "bg": "#ede0d4", "fg": "#7f5539", "accent": "#b08968" },
     { "text": "Write a haiku about your kitchen.", "fontFamily": "'UnifrakturMaguntia', cursive", "fontSize": "clamp(2.4rem, 6vw, 5.6rem)", "fontWeight": "400", "letterSpacing": "0", "bg": "#e9c46a", "fg": "#264653", "accent": "#e76f51" },
-    { "text": "BREW A NEW KIND OF TEA", "subtitle": "Pick three ingredients from your kitchen and steep them.", "fontFamily": "'Tourney', sans-serif", "fontSize": "clamp(2rem, 5vw, 4.6rem)", "fontWeight": "900", "letterSpacing": "0.04em", "bg": "#386641", "fg": "#f2e8cf", "accent": "#bc4749" },
+    { "text": "BREW A NEW KIND OF TEA", "subtitle": "Pick three ingredients from your kitchen and steep them.", "fontFamily": "'Tourney', sans-serif", "fontSize": "clamp(2rem, 5vw, 4.6rem)", "fontWeight": "900", "letterSpacing": "0.04em", "bg": "#386641", "fg": "#f2e8cf", "accent": "#bc4749", "help": ["Raid your kitchen for: citrus peel, cinnamon sticks, ginger, fresh herbs, or dried fruit.", "Combine two or three ingredients and steep in near-boiling water for 5–7 minutes.", "Taste before sweetening — then adjust with honey, sugar, or nothing and taste again."] },
     { "text": "Memorize the first verse of a song in a language you don't speak.", "fontFamily": "'Caveat', cursive", "fontSize": "clamp(2rem, 5.2vw, 4.8rem)", "fontWeight": "700", "letterSpacing": "0", "bg": "#fff1e6", "fg": "#22223b", "accent": "#9a8c98" },
     { "text": "MAKE A PLAYLIST FOR A FICTIONAL CHARACTER", "fontFamily": "'Bungee Shade', cursive", "fontSize": "clamp(1.7rem, 4.2vw, 3.8rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#ff5d8f", "fg": "#1a1423", "accent": "#00f5d4" },
     { "text": "Research the deepest hole humans have ever dug.", "fontFamily": "'Cinzel', serif", "fontSize": "clamp(1.7rem, 4.4vw, 4rem)", "fontWeight": "700", "letterSpacing": "0.03em", "bg": "#1b263b", "fg": "#e0e1dd", "accent": "#ff9e00" },
     { "text": "stretch every joint in your body, slowly.", "fontFamily": "'Caveat', cursive", "fontSize": "clamp(2.4rem, 6vw, 5.6rem)", "fontWeight": "700", "letterSpacing": "0", "bg": "#cbf3f0", "fg": "#2ec4b6", "accent": "#ff9f1c" },
-    { "text": "INVENT A NEW WORD AND USE IT IN THREE SENTENCES", "fontFamily": "'Rubik Glitch', cursive", "fontSize": "clamp(1.7rem, 4.4vw, 4rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#ffbe0b", "fg": "#8338ec", "accent": "#3a86ff" },
+    { "text": "INVENT A NEW WORD AND USE IT IN THREE SENTENCES", "fontFamily": "'Rubik Glitch', cursive", "fontSize": "clamp(1.7rem, 4.4vw, 4rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#ffbe0b", "fg": "#8338ec", "accent": "#3a86ff", "help": ["Think of a feeling or situation that has no word yet — that gap is your raw material.", "Combine two real words, or add a prefix or suffix: vellichor, sonder, hiraeth all started this way.", "Write three sentences using your word naturally, then say it out loud to test if it sticks."] },
     { "text": "Try to remember every house you've ever lived in.", "fontFamily": "'Playfair Display', serif", "fontSize": "clamp(1.8rem, 4.6vw, 4.2rem)", "fontWeight": "900", "letterSpacing": "-0.015em", "bg": "#f5ebe0", "fg": "#4a4e69", "accent": "#9a8c98" },
     { "text": "the long walk", "subtitle": "Walk until your phone hits 20% battery. Then walk back.", "fontFamily": "'Monoton', cursive", "fontSize": "clamp(3rem, 8vw, 7rem)", "fontWeight": "400", "letterSpacing": "0.05em", "bg": "#283618", "fg": "#fefae0", "accent": "#dda15e" },
     { "text": "Compile a list of every smell you remember from childhood.", "fontFamily": "'Abril Fatface', serif", "fontSize": "clamp(1.7rem, 4.4vw, 4rem)", "fontWeight": "400", "letterSpacing": "-0.01em", "bg": "#ffd6a5", "fg": "#6d2e46", "accent": "#bc6c25" }
@@ -207,7 +208,7 @@
   }
 
   /* ───────────────────────────────────────────────────────────────
-     CONTROLS  (button + hint)
+     CONTROLS  (button + hint + secondary actions)
      ─────────────────────────────────────────────────────────────── */
   .controls {
     margin-top: 3rem;
@@ -260,6 +261,289 @@
     letter-spacing: 0.2em;
     text-transform: uppercase;
     opacity: 0.5;
+  }
+
+  /* Secondary action row: Done + Help */
+  .secondary-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 0.25rem;
+  }
+
+  .done-button {
+    font-family: inherit;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background: transparent;
+    color: var(--fg);
+    border: 1.5px solid currentColor;
+    border-radius: 999px;
+    padding: 0.65rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.75;
+    transition:
+      background-color 200ms ease,
+      color 200ms ease,
+      opacity 200ms ease,
+      border-color var(--theme-transition);
+  }
+
+  .done-button:hover:not(:disabled) {
+    opacity: 1;
+    background: var(--fg);
+    color: var(--bg);
+  }
+
+  .done-button:active:not(:disabled) {
+    transform: scale(0.97);
+  }
+
+  .done-button.is-confirmed {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--bg);
+    opacity: 1;
+    cursor: default;
+  }
+
+  .done-button:disabled {
+    cursor: default;
+  }
+
+  .help-link {
+    font-family: inherit;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--fg);
+    opacity: 0.45;
+    padding: 0.25rem 0;
+    transition: opacity 200ms ease;
+  }
+
+  .help-link:hover {
+    opacity: 1;
+  }
+
+  .help-link[hidden] {
+    display: none;
+  }
+
+  /* ───────────────────────────────────────────────────────────────
+     FOOTER DONE COUNT
+     ─────────────────────────────────────────────────────────────── */
+  .done-count {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+    background: none;
+    border: none;
+    color: var(--fg);
+    padding: 0;
+    cursor: default;
+    opacity: 0.7;
+    transition:
+      opacity 200ms ease,
+      color var(--theme-transition);
+  }
+
+  .done-count.has-items {
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .done-count.has-items:hover {
+    opacity: 1;
+  }
+
+  /* ───────────────────────────────────────────────────────────────
+     PANEL BACKDROP
+     ─────────────────────────────────────────────────────────────── */
+  .panel-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(2px);
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 300ms ease;
+  }
+
+  .panel-backdrop.is-open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  /* ───────────────────────────────────────────────────────────────
+     PANELS  (shared base + help / log variants)
+     ─────────────────────────────────────────────────────────────── */
+  .panel {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 11;
+    background: var(--bg);
+    color: var(--fg);
+    border-top: 1.5px solid var(--fg);
+    padding: 1.75rem 2rem 2.5rem;
+    transform: translateY(100%);
+    transition:
+      transform 350ms cubic-bezier(.2, .8, .2, 1),
+      background-color var(--theme-transition),
+      color var(--theme-transition),
+      border-color var(--theme-transition);
+    max-height: 75vh;
+    overflow-y: auto;
+    /* Constrain width on large screens */
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .panel.is-open {
+    transform: translateY(0);
+  }
+
+  .panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.75rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    opacity: 0.65;
+  }
+
+  .panel-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.1rem;
+    color: var(--fg);
+    line-height: 1;
+    padding: 0.1rem 0.25rem;
+    opacity: 0.7;
+    transition: opacity 150ms ease;
+  }
+
+  .panel-close:hover {
+    opacity: 1;
+  }
+
+  /* Help steps list */
+  .help-steps {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .help-step {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    font-size: clamp(0.9rem, 1.8vw, 1.05rem);
+    line-height: 1.55;
+  }
+
+  .help-step-num {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    opacity: 0.45;
+    min-width: 2ch;
+    padding-top: 0.25em;
+    flex-shrink: 0;
+  }
+
+  /* Completion log entries */
+  .log-entries {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    margin-bottom: 2rem;
+  }
+
+  .log-entry {
+    display: flex;
+    gap: 0.85rem;
+    align-items: flex-start;
+  }
+
+  .log-entry-check {
+    color: var(--accent);
+    font-size: 0.8rem;
+    flex-shrink: 0;
+    padding-top: 0.15em;
+    transition: color var(--theme-transition);
+  }
+
+  .log-entry-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .log-entry-text {
+    font-size: clamp(0.8rem, 1.6vw, 0.95rem);
+    line-height: 1.45;
+    opacity: 0.9;
+  }
+
+  .log-entry-time {
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.4;
+  }
+
+  .log-empty {
+    font-size: 0.85rem;
+    opacity: 0.45;
+    text-align: center;
+    padding: 1.25rem 0;
+    letter-spacing: 0.05em;
+  }
+
+  /* Panel primary action button */
+  .panel-btn {
+    font-family: inherit;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    background: var(--fg);
+    color: var(--bg);
+    border: none;
+    border-radius: 999px;
+    padding: 0.85rem 2rem;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition:
+      transform 200ms ease,
+      background-color var(--theme-transition),
+      color var(--theme-transition);
+  }
+
+  .panel-btn:hover {
+    transform: translateY(-1px) scale(1.02);
+  }
+
+  .panel-btn:active {
+    transform: scale(0.98);
   }
 
   /* ───────────────────────────────────────────────────────────────
@@ -336,6 +620,8 @@
   @media (max-width: 600px) {
     body { padding: 1.5rem 1rem; }
     .corner { width: 16px; height: 16px; }
+    .panel { padding: 1.5rem 1.25rem 2.25rem; }
+    .secondary-actions { gap: 1rem; }
   }
   </style>
 </head>
@@ -364,13 +650,41 @@
         Give me something
       </button>
       <p class="next-button-hint">or press the spacebar</p>
+
+      <div class="secondary-actions">
+        <button class="done-button" id="done-button" type="button">Done it</button>
+        <button class="help-link" id="help-link" type="button" hidden>How to start →</button>
+      </div>
     </div>
   </main>
 
   <footer class="page-footer">
     <span>Cure for the idle hour</span>
-    <span>↓ One click away</span>
+    <button class="done-count" id="done-count" type="button">↓ One click away</button>
   </footer>
+
+  <!-- Panel backdrop -->
+  <div class="panel-backdrop" id="panel-backdrop"></div>
+
+  <!-- Help panel: how to start -->
+  <div class="panel" id="help-panel" role="dialog" aria-modal="true" aria-label="How to start">
+    <div class="panel-header">
+      <span>How to start</span>
+      <button class="panel-close" type="button" aria-label="Close panel">×</button>
+    </div>
+    <ol class="help-steps" id="help-steps"></ol>
+    <button class="panel-btn" id="help-got-it" type="button">Got it →</button>
+  </div>
+
+  <!-- Log panel: completion history -->
+  <div class="panel" id="log-panel" role="dialog" aria-modal="true" aria-label="Done list">
+    <div class="panel-header">
+      <span>Done list</span>
+      <button class="panel-close" type="button" aria-label="Close panel">×</button>
+    </div>
+    <div class="log-entries" id="log-entries"></div>
+    <button class="panel-btn" id="log-close" type="button">Keep going →</button>
+  </div>
 
   <script>
   'use strict';
@@ -386,27 +700,34 @@
   // DOM REFERENCES
   // ══════════════════════════════════════════════════════════════
   const el = {
-    root:     document.documentElement,
-    counter:  document.getElementById('activity-counter'),
-    activity: document.getElementById('activity'),
-    text:     document.getElementById('activity-text'),
-    subtitle: document.getElementById('activity-subtitle'),
-    button:   document.getElementById('next-button'),
+    root:       document.documentElement,
+    counter:    document.getElementById('activity-counter'),
+    activity:   document.getElementById('activity'),
+    text:       document.getElementById('activity-text'),
+    subtitle:   document.getElementById('activity-subtitle'),
+    button:     document.getElementById('next-button'),
+    doneButton: document.getElementById('done-button'),
+    helpLink:   document.getElementById('help-link'),
+    doneCount:  document.getElementById('done-count'),
+    backdrop:   document.getElementById('panel-backdrop'),
+    helpPanel:  document.getElementById('help-panel'),
+    helpSteps:  document.getElementById('help-steps'),
+    logPanel:   document.getElementById('log-panel'),
+    logEntries: document.getElementById('log-entries'),
   };
 
   // ══════════════════════════════════════════════════════════════
   // STATE
-  // Tracks recently-shown activities so we cycle through all of
-  // them before any repeat.
   // ══════════════════════════════════════════════════════════════
-  let previousIndex = -1;
-  const recentlyShown = new Set();
+  let previousIndex     = -1;
+  let currentIndex      = -1;
+  const recentlyShown   = new Set();
+  const STORAGE_KEY     = 'now-what-completions';
 
   // ══════════════════════════════════════════════════════════════
   // SELECTION
   // ══════════════════════════════════════════════════════════════
   function pickNextIndex() {
-    // Start fresh once every activity has been shown
     if (recentlyShown.size >= activities.length) {
       recentlyShown.clear();
     }
@@ -426,7 +747,6 @@
 
   // ══════════════════════════════════════════════════════════════
   // RENDERING
-  // Each helper handles one aspect of the activity display.
   // ══════════════════════════════════════════════════════════════
   function applyTheme(activity) {
     el.root.style.setProperty('--bg',     activity.bg);
@@ -459,17 +779,26 @@
 
   function restartEnterAnimation() {
     el.activity.classList.remove('is-entering');
-    void el.activity.offsetWidth;        // force reflow so animation restarts
+    void el.activity.offsetWidth;
     el.activity.classList.add('is-entering');
   }
 
   function displayActivity(index) {
+    currentIndex = index;
     const activity = activities[index];
     applyTheme(activity);
     applyTypography(activity);
     applyContent(activity);
     updateCounter(index);
     restartEnterAnimation();
+
+    // Show/hide "How to start" based on whether this activity has help steps
+    el.helpLink.hidden = !activity.help;
+
+    // Reset done button for the new activity
+    el.doneButton.textContent = 'Done it';
+    el.doneButton.classList.remove('is-confirmed');
+    el.doneButton.disabled = false;
   }
 
   function showNextActivity() {
@@ -477,12 +806,135 @@
   }
 
   // ══════════════════════════════════════════════════════════════
+  // COMPLETION LOG
+  // ══════════════════════════════════════════════════════════════
+  function getCompletions() {
+    try {
+      return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+    } catch {
+      return [];
+    }
+  }
+
+  function saveCompletion(index) {
+    const activity    = activities[index];
+    const completions = getCompletions();
+    completions.unshift({ text: activity.text, ts: Date.now() });
+    if (completions.length > 50) completions.length = 50;
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(completions));
+  }
+
+  function timeAgo(ts) {
+    const s = Math.floor((Date.now() - ts) / 1000);
+    if (s < 60)                          return 'just now';
+    if (s < 3600)                        return `${Math.floor(s / 60)}m ago`;
+    if (s < 86400)                       return `${Math.floor(s / 3600)}h ago`;
+    if (Math.floor(s / 86400) === 1)     return 'yesterday';
+    return `${Math.floor(s / 86400)} days ago`;
+  }
+
+  function updateDoneCount() {
+    const count = getCompletions().length;
+    if (count === 0) {
+      el.doneCount.textContent = '↓ One click away';
+      el.doneCount.classList.remove('has-items');
+    } else {
+      el.doneCount.textContent = `${count} done`;
+      el.doneCount.classList.add('has-items');
+    }
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // PANELS
+  // ══════════════════════════════════════════════════════════════
+  function openPanel(panel) {
+    el.backdrop.classList.add('is-open');
+    panel.classList.add('is-open');
+  }
+
+  function closeAllPanels() {
+    el.backdrop.classList.remove('is-open');
+    el.helpPanel.classList.remove('is-open');
+    el.logPanel.classList.remove('is-open');
+  }
+
+  function showHelpPanel() {
+    if (currentIndex < 0) return;
+    const activity = activities[currentIndex];
+    if (!activity.help) return;
+
+    el.helpSteps.innerHTML = activity.help.map((step, i) => `
+      <li class="help-step">
+        <span class="help-step-num">0${i + 1}</span>
+        <span>${step}</span>
+      </li>`).join('');
+
+    openPanel(el.helpPanel);
+  }
+
+  function showLogPanel() {
+    const completions = getCompletions();
+
+    if (completions.length === 0) {
+      el.logEntries.innerHTML = `<p class="log-empty">Nothing yet — go do something.</p>`;
+    } else {
+      el.logEntries.innerHTML = completions.map(c => {
+        const truncated = c.text.length > 70 ? c.text.slice(0, 70) + '…' : c.text;
+        return `
+          <div class="log-entry">
+            <span class="log-entry-check">✓</span>
+            <div class="log-entry-body">
+              <span class="log-entry-text">${truncated}</span>
+              <span class="log-entry-time">${timeAgo(c.ts)}</span>
+            </div>
+          </div>`;
+      }).join('');
+    }
+
+    openPanel(el.logPanel);
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // DONE BUTTON
+  // ══════════════════════════════════════════════════════════════
+  function handleDone() {
+    if (currentIndex < 0 || el.doneButton.disabled) return;
+
+    saveCompletion(currentIndex);
+    updateDoneCount();
+
+    el.doneButton.textContent = 'Done ✓';
+    el.doneButton.classList.add('is-confirmed');
+    el.doneButton.disabled = true;
+  }
+
+  // ══════════════════════════════════════════════════════════════
   // EVENTS
   // ══════════════════════════════════════════════════════════════
   el.button.addEventListener('click', showNextActivity);
+  el.doneButton.addEventListener('click', handleDone);
+  el.helpLink.addEventListener('click', showHelpPanel);
+
+  el.doneCount.addEventListener('click', () => {
+    if (getCompletions().length > 0) showLogPanel();
+  });
+
+  el.backdrop.addEventListener('click', closeAllPanels);
+
+  document.querySelectorAll('.panel-close').forEach(btn =>
+    btn.addEventListener('click', closeAllPanels)
+  );
+  document.getElementById('help-got-it').addEventListener('click', closeAllPanels);
+  document.getElementById('log-close').addEventListener('click', closeAllPanels);
 
   document.addEventListener('keydown', (event) => {
-    if (event.code === 'Space' || event.code === 'Enter') {
+    if (event.code === 'Escape') {
+      closeAllPanels();
+      return;
+    }
+    const panelOpen = el.helpPanel.classList.contains('is-open') ||
+                      el.logPanel.classList.contains('is-open');
+    if (!panelOpen && (event.code === 'Space' || event.code === 'Enter')) {
       event.preventDefault();
       showNextActivity();
     }
@@ -491,6 +943,7 @@
   // ══════════════════════════════════════════════════════════════
   // INIT
   // ══════════════════════════════════════════════════════════════
+  updateDoneCount();
   showNextActivity();
   </script>
 </body>
