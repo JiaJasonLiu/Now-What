@@ -31,50 +31,51 @@
       fg              Foreground / text color
       accent          Accent color (used for the pulsing header dot)
       help            Array of 3 strings: concrete first steps      (optional)
+      category        One of: no-wifi | exercise | learning | creativity | random
   ═══════════════════════════════════════════════════════════════════
   -->
   <script id="activity-data" type="application/json">
   [
-    { "text": "Learn the history behind the Three Kingdoms period of ancient China.", "fontFamily": "'Cinzel', serif", "fontSize": "clamp(1.8rem, 4.5vw, 4rem)", "fontWeight": "700", "letterSpacing": "0.04em", "bg": "#1c1410", "fg": "#e8c87c", "accent": "#b8853a", "help": ["Start with Wikipedia's 'Three Kingdoms' article — read just the intro and look at the map.", "Search YouTube for 'Three Kingdoms history' and pick any video under 20 minutes.", "Read the opening sentence of Romance of the Three Kingdoms, the world's longest novel."] },
-    { "text": "Cook one recipe from a country you've never visited.", "fontFamily": "'Shrikhand', cursive", "fontSize": "clamp(2rem, 5.5vw, 5rem)", "fontWeight": "400", "letterSpacing": "-0.01em", "bg": "#f7d046", "fg": "#5a1a00", "accent": "#d94f2b", "help": ["Pick any country on a map — go with your gut, not your comfort zone.", "Search '[country] easy traditional recipe' and read the first three results.", "Check you have at least two of the main ingredients before you commit to a dish."] },
-    { "text": "WRITE A LETTER TO YOURSELF TEN YEARS FROM NOW.", "fontFamily": "'VT323', monospace", "fontSize": "clamp(2.2rem, 6vw, 5.5rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#0a0e27", "fg": "#7fffa8", "accent": "#ff4081", "help": ["Open a blank doc and write: 'Dear [your name] in [year],'", "Answer three things: where are you now, what worries you, what do you hope for?", "Email it to yourself with the subject 'Open in [year]' — or use futureme.org."] },
-    { "text": "memorize a poem and recite it out loud to no one.", "fontFamily": "'Caveat', cursive", "fontSize": "clamp(2.4rem, 6.5vw, 6rem)", "fontWeight": "700", "letterSpacing": "0", "bg": "#f5e6d3", "fg": "#3a2818", "accent": "#8b4513" },
-    { "text": "Build a tiny paper boat and float it in a sink.", "fontFamily": "'Abril Fatface', serif", "fontSize": "clamp(2.2rem, 5.8vw, 5.5rem)", "fontWeight": "400", "letterSpacing": "-0.01em", "bg": "#a8d8ea", "fg": "#1e3a5f", "accent": "#ff6b6b" },
-    { "text": "Watch a documentary about deep sea creatures.", "fontFamily": "'Major Mono Display', monospace", "fontSize": "clamp(1.4rem, 3.5vw, 3.2rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#001a2e", "fg": "#4dd0e1", "accent": "#ffb74d" },
-    { "text": "Sketch every object on your desk in two minutes each.", "fontFamily": "'Fraunces', serif", "fontSize": "clamp(2rem, 5.2vw, 4.8rem)", "fontWeight": "900", "letterSpacing": "-0.02em", "bg": "#fff8e7", "fg": "#2c1810", "accent": "#d4a574" },
-    { "text": "LEARN TO TIE FIVE DIFFERENT KNOTS", "fontFamily": "'Bungee Shade', cursive", "fontSize": "clamp(1.8rem, 4.8vw, 4.5rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#e63946", "fg": "#fffbea", "accent": "#1d3557", "help": ["Grab any rope, cord, or shoelace — even a phone charger cable works.", "Search 'how to tie a bowline knot' on YouTube and start with that one.", "Master one knot completely before moving on — sequence matters more than speed."] },
-    { "text": "Read about the origins of the word 'serendipity'.", "fontFamily": "'Playfair Display', serif", "fontSize": "clamp(2rem, 5.2vw, 4.8rem)", "fontWeight": "900", "letterSpacing": "-0.015em", "bg": "#2d1b3d", "fg": "#f4d35e", "accent": "#ee964b" },
-    { "text": "PLAN A FAKE HEIST FOR AN IMAGINARY MUSEUM", "fontFamily": "'Tourney', sans-serif", "fontSize": "clamp(1.8rem, 4.6vw, 4.4rem)", "fontWeight": "900", "letterSpacing": "0.04em", "bg": "#0d0d0d", "fg": "#ff2e63", "accent": "#08d9d6", "help": ["Pick a real famous museum as your target — the Louvre, the British Museum, the Met.", "Decide exactly what you're stealing and write one sentence on why your character wants it.", "Sketch a rough floor plan and mark the guard posts, cameras, and emergency exits."] },
-    { "text": "neon dreams", "subtitle": "Design a fictional 80s arcade game and name every character.", "fontFamily": "'Monoton', cursive", "fontSize": "clamp(3rem, 8vw, 7rem)", "fontWeight": "400", "letterSpacing": "0.05em", "bg": "#16003b", "fg": "#ff10f0", "accent": "#39ff14" },
-    { "text": "Memorize the names of all eight planets in reverse order.", "fontFamily": "'Eczar', serif", "fontSize": "clamp(2rem, 5vw, 4.6rem)", "fontWeight": "700", "letterSpacing": "-0.01em", "bg": "#1a0033", "fg": "#ffd700", "accent": "#ff6ec7" },
-    { "text": "ye olde tavern crawl —", "subtitle": "Research what people ate and drank in medieval taverns.", "fontFamily": "'UnifrakturMaguntia', cursive", "fontSize": "clamp(2.8rem, 7vw, 6rem)", "fontWeight": "400", "letterSpacing": "0", "bg": "#3d2817", "fg": "#f5deb3", "accent": "#8b0000" },
-    { "text": "ERROR.PIXEL.NOT.FOUND", "subtitle": "Build a pixel-art self-portrait on graph paper.", "fontFamily": "'Silkscreen', cursive", "fontSize": "clamp(1.6rem, 4vw, 3.8rem)", "fontWeight": "400", "letterSpacing": "0.08em", "bg": "#000000", "fg": "#00ff41", "accent": "#ff00ff" },
-    { "text": "GLITCH IN THE SYSTEM", "subtitle": "Take photos of the same object from ten unusual angles.", "fontFamily": "'Rubik Glitch', cursive", "fontSize": "clamp(2.2rem, 5.6vw, 5.2rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#ff006e", "fg": "#000000", "accent": "#fbff00" },
-    { "text": "Invent a secret handshake with seven distinct moves.", "fontFamily": "'Shrikhand', cursive", "fontSize": "clamp(2rem, 5vw, 4.6rem)", "fontWeight": "400", "letterSpacing": "-0.01em", "bg": "#2c5f2d", "fg": "#fffacd", "accent": "#ff8c42" },
-    { "text": "LEARN TO WHISTLE WITH TWO FINGERS", "fontFamily": "'Bungee Shade', cursive", "fontSize": "clamp(1.8rem, 4.6vw, 4.4rem)", "fontWeight": "400", "letterSpacing": "0.03em", "bg": "#ffb627", "fg": "#2b0a3d", "accent": "#e63946" },
-    { "text": "Write a one-page short story using only words under five letters.", "fontFamily": "'Fraunces', serif", "fontSize": "clamp(1.7rem, 4.2vw, 3.8rem)", "fontWeight": "900", "letterSpacing": "-0.02em", "bg": "#f4e9d8", "fg": "#1c1c1c", "accent": "#9b2226" },
-    { "text": "Read about the lost city of Pompeii and what they ate for breakfast.", "fontFamily": "'Cinzel', serif", "fontSize": "clamp(1.6rem, 4vw, 3.6rem)", "fontWeight": "700", "letterSpacing": "0.03em", "bg": "#3b1f1f", "fg": "#f4a261", "accent": "#e76f51" },
-    { "text": "rearrange the furniture in one room.", "fontFamily": "'Caveat', cursive", "fontSize": "clamp(2.6rem, 7vw, 6.5rem)", "fontWeight": "700", "letterSpacing": "0", "bg": "#e8d5c4", "fg": "#3e2723", "accent": "#795548" },
-    { "text": "TIME YOURSELF SOLVING A RUBIK'S CUBE.", "fontFamily": "'VT323', monospace", "fontSize": "clamp(2rem, 5.2vw, 4.8rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#0f3460", "fg": "#e94560", "accent": "#f5d547" },
-    { "text": "Watch the sunset without your phone for twenty minutes.", "fontFamily": "'Abril Fatface', serif", "fontSize": "clamp(1.8rem, 4.6vw, 4.2rem)", "fontWeight": "400", "letterSpacing": "-0.01em", "bg": "#fcb045", "fg": "#3a0ca3", "accent": "#fd1d1d" },
-    { "text": "origami crane", "subtitle": "Fold a paper crane. Then fold nine more for a flock.", "fontFamily": "'Monoton', cursive", "fontSize": "clamp(3rem, 8vw, 7rem)", "fontWeight": "400", "letterSpacing": "0.04em", "bg": "#caf0f8", "fg": "#03045e", "accent": "#ef476f", "help": ["Find a square piece of paper — 15×15cm is ideal, but any square works.", "Search 'origami crane beginner tutorial' on YouTube and watch the whole thing first.", "Pause the video at each step, fold, then continue — resist skipping ahead."] },
-    { "text": "Listen to an entire album with eyes closed and lights off.", "fontFamily": "'Playfair Display', serif", "fontSize": "clamp(1.7rem, 4.4vw, 4rem)", "fontWeight": "900", "letterSpacing": "-0.015em", "bg": "#10002b", "fg": "#c77dff", "accent": "#ffd60a" },
-    { "text": "DECODE YOUR DREAMS", "subtitle": "Write down every dream you can remember and look for patterns.", "fontFamily": "'Rampart One', cursive", "fontSize": "clamp(2.4rem, 6vw, 5.5rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#240046", "fg": "#ffba08", "accent": "#ff006e", "help": ["Put a notebook and pen on your nightstand before you sleep tonight.", "Write the moment you wake up — even just three words counts as a record.", "After five entries, look for any feeling, place, or person that appears more than once."] },
-    { "text": "Learn to say 'thank you' in ten different languages.", "fontFamily": "'Eczar', serif", "fontSize": "clamp(1.8rem, 4.6vw, 4.2rem)", "fontWeight": "700", "letterSpacing": "-0.01em", "bg": "#f8edeb", "fg": "#22223b", "accent": "#c9184a" },
-    { "text": "Build a blanket fort and read inside it.", "fontFamily": "'Shrikhand', cursive", "fontSize": "clamp(2rem, 5.4vw, 5rem)", "fontWeight": "400", "letterSpacing": "-0.01em", "bg": "#ffe5b4", "fg": "#6f1d1b", "accent": "#bb3e03" },
-    { "text": "Identify five constellations tonight.", "fontFamily": "'Major Mono Display', monospace", "fontSize": "clamp(1.5rem, 3.8vw, 3.4rem)", "fontWeight": "400", "letterSpacing": "0.04em", "bg": "#03071e", "fg": "#ffba08", "accent": "#9d4edd", "help": ["Download the free Sky Map or Stellarium app on your phone.", "Go outside after dark and give your eyes two full minutes to adjust.", "Start with Orion's Belt — three bright stars in a straight line — then branch out from there."] },
-    { "text": "OUTSIDE → GO", "subtitle": "Walk a route you've never taken before, no destination needed.", "fontFamily": "'Silkscreen', cursive", "fontSize": "clamp(2rem, 5vw, 4.6rem)", "fontWeight": "400", "letterSpacing": "0.1em", "bg": "#52b788", "fg": "#081c15", "accent": "#ffb703" },
-    { "text": "Try to draw a perfect circle freehand. Then ten more.", "fontFamily": "'Fraunces', serif", "fontSize": "clamp(1.7rem, 4.4vw, 4rem)", "fontWeight": "900", "letterSpacing": "-0.02em", "bg": "#ede0d4", "fg": "#7f5539", "accent": "#b08968" },
-    { "text": "Write a haiku about your kitchen.", "fontFamily": "'UnifrakturMaguntia', cursive", "fontSize": "clamp(2.4rem, 6vw, 5.6rem)", "fontWeight": "400", "letterSpacing": "0", "bg": "#e9c46a", "fg": "#264653", "accent": "#e76f51" },
-    { "text": "BREW A NEW KIND OF TEA", "subtitle": "Pick three ingredients from your kitchen and steep them.", "fontFamily": "'Tourney', sans-serif", "fontSize": "clamp(2rem, 5vw, 4.6rem)", "fontWeight": "900", "letterSpacing": "0.04em", "bg": "#386641", "fg": "#f2e8cf", "accent": "#bc4749", "help": ["Raid your kitchen for: citrus peel, cinnamon sticks, ginger, fresh herbs, or dried fruit.", "Combine two or three ingredients and steep in near-boiling water for 5–7 minutes.", "Taste before sweetening — then adjust with honey, sugar, or nothing and taste again."] },
-    { "text": "Memorize the first verse of a song in a language you don't speak.", "fontFamily": "'Caveat', cursive", "fontSize": "clamp(2rem, 5.2vw, 4.8rem)", "fontWeight": "700", "letterSpacing": "0", "bg": "#fff1e6", "fg": "#22223b", "accent": "#9a8c98" },
-    { "text": "MAKE A PLAYLIST FOR A FICTIONAL CHARACTER", "fontFamily": "'Bungee Shade', cursive", "fontSize": "clamp(1.7rem, 4.2vw, 3.8rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#ff5d8f", "fg": "#1a1423", "accent": "#00f5d4" },
-    { "text": "Research the deepest hole humans have ever dug.", "fontFamily": "'Cinzel', serif", "fontSize": "clamp(1.7rem, 4.4vw, 4rem)", "fontWeight": "700", "letterSpacing": "0.03em", "bg": "#1b263b", "fg": "#e0e1dd", "accent": "#ff9e00" },
-    { "text": "stretch every joint in your body, slowly.", "fontFamily": "'Caveat', cursive", "fontSize": "clamp(2.4rem, 6vw, 5.6rem)", "fontWeight": "700", "letterSpacing": "0", "bg": "#cbf3f0", "fg": "#2ec4b6", "accent": "#ff9f1c" },
-    { "text": "INVENT A NEW WORD AND USE IT IN THREE SENTENCES", "fontFamily": "'Rubik Glitch', cursive", "fontSize": "clamp(1.7rem, 4.4vw, 4rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#ffbe0b", "fg": "#8338ec", "accent": "#3a86ff", "help": ["Think of a feeling or situation that has no word yet — that gap is your raw material.", "Combine two real words, or add a prefix or suffix: vellichor, sonder, hiraeth all started this way.", "Write three sentences using your word naturally, then say it out loud to test if it sticks."] },
-    { "text": "Try to remember every house you've ever lived in.", "fontFamily": "'Playfair Display', serif", "fontSize": "clamp(1.8rem, 4.6vw, 4.2rem)", "fontWeight": "900", "letterSpacing": "-0.015em", "bg": "#f5ebe0", "fg": "#4a4e69", "accent": "#9a8c98" },
-    { "text": "the long walk", "subtitle": "Walk until your phone hits 20% battery. Then walk back.", "fontFamily": "'Monoton', cursive", "fontSize": "clamp(3rem, 8vw, 7rem)", "fontWeight": "400", "letterSpacing": "0.05em", "bg": "#283618", "fg": "#fefae0", "accent": "#dda15e" },
-    { "text": "Compile a list of every smell you remember from childhood.", "fontFamily": "'Abril Fatface', serif", "fontSize": "clamp(1.7rem, 4.4vw, 4rem)", "fontWeight": "400", "letterSpacing": "-0.01em", "bg": "#ffd6a5", "fg": "#6d2e46", "accent": "#bc6c25" }
+    { "text": "Learn the history behind the Three Kingdoms period of ancient China.", "fontFamily": "'Cinzel', serif", "fontSize": "clamp(1.8rem, 4.5vw, 4rem)", "fontWeight": "700", "letterSpacing": "0.04em", "bg": "#1c1410", "fg": "#e8c87c", "accent": "#b8853a", "help": ["Start with Wikipedia's 'Three Kingdoms' article — read just the intro and look at the map.", "Search YouTube for 'Three Kingdoms history' and pick any video under 20 minutes.", "Read the opening sentence of Romance of the Three Kingdoms, the world's longest novel."], "category": "learning" },
+    { "text": "Cook one recipe from a country you've never visited.", "fontFamily": "'Shrikhand', cursive", "fontSize": "clamp(2rem, 5.5vw, 5rem)", "fontWeight": "400", "letterSpacing": "-0.01em", "bg": "#f7d046", "fg": "#5a1a00", "accent": "#d94f2b", "help": ["Pick any country on a map — go with your gut, not your comfort zone.", "Search '[country] easy traditional recipe' and read the first three results.", "Check you have at least two of the main ingredients before you commit to a dish."], "category": "creativity" },
+    { "text": "WRITE A LETTER TO YOURSELF TEN YEARS FROM NOW.", "fontFamily": "'VT323', monospace", "fontSize": "clamp(2.2rem, 6vw, 5.5rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#0a0e27", "fg": "#7fffa8", "accent": "#ff4081", "help": ["Open a blank doc and write: 'Dear [your name] in [year],'", "Answer three things: where are you now, what worries you, what do you hope for?", "Email it to yourself with the subject 'Open in [year]' — or use futureme.org."], "category": "creativity" },
+    { "text": "memorize a poem and recite it out loud to no one.", "fontFamily": "'Caveat', cursive", "fontSize": "clamp(2.4rem, 6.5vw, 6rem)", "fontWeight": "700", "letterSpacing": "0", "bg": "#f5e6d3", "fg": "#3a2818", "accent": "#8b4513", "category": "no-wifi" },
+    { "text": "Build a tiny paper boat and float it in a sink.", "fontFamily": "'Abril Fatface', serif", "fontSize": "clamp(2.2rem, 5.8vw, 5.5rem)", "fontWeight": "400", "letterSpacing": "-0.01em", "bg": "#a8d8ea", "fg": "#1e3a5f", "accent": "#ff6b6b", "category": "no-wifi" },
+    { "text": "Watch a documentary about deep sea creatures.", "fontFamily": "'Major Mono Display', monospace", "fontSize": "clamp(1.4rem, 3.5vw, 3.2rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#001a2e", "fg": "#4dd0e1", "accent": "#ffb74d", "category": "learning" },
+    { "text": "Sketch every object on your desk in two minutes each.", "fontFamily": "'Fraunces', serif", "fontSize": "clamp(2rem, 5.2vw, 4.8rem)", "fontWeight": "900", "letterSpacing": "-0.02em", "bg": "#fff8e7", "fg": "#2c1810", "accent": "#d4a574", "category": "creativity" },
+    { "text": "LEARN TO TIE FIVE DIFFERENT KNOTS", "fontFamily": "'Bungee Shade', cursive", "fontSize": "clamp(1.8rem, 4.8vw, 4.5rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#e63946", "fg": "#fffbea", "accent": "#1d3557", "help": ["Grab any rope, cord, or shoelace — even a phone charger cable works.", "Search 'how to tie a bowline knot' on YouTube and start with that one.", "Master one knot completely before moving on — sequence matters more than speed."], "category": "learning" },
+    { "text": "Read about the origins of the word 'serendipity'.", "fontFamily": "'Playfair Display', serif", "fontSize": "clamp(2rem, 5.2vw, 4.8rem)", "fontWeight": "900", "letterSpacing": "-0.015em", "bg": "#2d1b3d", "fg": "#f4d35e", "accent": "#ee964b", "category": "learning" },
+    { "text": "PLAN A FAKE HEIST FOR AN IMAGINARY MUSEUM", "fontFamily": "'Tourney', sans-serif", "fontSize": "clamp(1.8rem, 4.6vw, 4.4rem)", "fontWeight": "900", "letterSpacing": "0.04em", "bg": "#0d0d0d", "fg": "#ff2e63", "accent": "#08d9d6", "help": ["Pick a real famous museum as your target — the Louvre, the British Museum, the Met.", "Decide exactly what you're stealing and write one sentence on why your character wants it.", "Sketch a rough floor plan and mark the guard posts, cameras, and emergency exits."], "category": "random" },
+    { "text": "neon dreams", "subtitle": "Design a fictional 80s arcade game and name every character.", "fontFamily": "'Monoton', cursive", "fontSize": "clamp(3rem, 8vw, 7rem)", "fontWeight": "400", "letterSpacing": "0.05em", "bg": "#16003b", "fg": "#ff10f0", "accent": "#39ff14", "category": "creativity" },
+    { "text": "Memorize the names of all eight planets in reverse order.", "fontFamily": "'Eczar', serif", "fontSize": "clamp(2rem, 5vw, 4.6rem)", "fontWeight": "700", "letterSpacing": "-0.01em", "bg": "#1a0033", "fg": "#ffd700", "accent": "#ff6ec7", "category": "learning" },
+    { "text": "ye olde tavern crawl —", "subtitle": "Research what people ate and drank in medieval taverns.", "fontFamily": "'UnifrakturMaguntia', cursive", "fontSize": "clamp(2.8rem, 7vw, 6rem)", "fontWeight": "400", "letterSpacing": "0", "bg": "#3d2817", "fg": "#f5deb3", "accent": "#8b0000", "category": "learning" },
+    { "text": "ERROR.PIXEL.NOT.FOUND", "subtitle": "Build a pixel-art self-portrait on graph paper.", "fontFamily": "'Silkscreen', cursive", "fontSize": "clamp(1.6rem, 4vw, 3.8rem)", "fontWeight": "400", "letterSpacing": "0.08em", "bg": "#000000", "fg": "#00ff41", "accent": "#ff00ff", "category": "creativity" },
+    { "text": "GLITCH IN THE SYSTEM", "subtitle": "Take photos of the same object from ten unusual angles.", "fontFamily": "'Rubik Glitch', cursive", "fontSize": "clamp(2.2rem, 5.6vw, 5.2rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#ff006e", "fg": "#000000", "accent": "#fbff00", "category": "creativity" },
+    { "text": "Invent a secret handshake with seven distinct moves.", "fontFamily": "'Shrikhand', cursive", "fontSize": "clamp(2rem, 5vw, 4.6rem)", "fontWeight": "400", "letterSpacing": "-0.01em", "bg": "#2c5f2d", "fg": "#fffacd", "accent": "#ff8c42", "category": "random" },
+    { "text": "LEARN TO WHISTLE WITH TWO FINGERS", "fontFamily": "'Bungee Shade', cursive", "fontSize": "clamp(1.8rem, 4.6vw, 4.4rem)", "fontWeight": "400", "letterSpacing": "0.03em", "bg": "#ffb627", "fg": "#2b0a3d", "accent": "#e63946", "category": "random" },
+    { "text": "Write a one-page short story using only words under five letters.", "fontFamily": "'Fraunces', serif", "fontSize": "clamp(1.7rem, 4.2vw, 3.8rem)", "fontWeight": "900", "letterSpacing": "-0.02em", "bg": "#f4e9d8", "fg": "#1c1c1c", "accent": "#9b2226", "category": "creativity" },
+    { "text": "Read about the lost city of Pompeii and what they ate for breakfast.", "fontFamily": "'Cinzel', serif", "fontSize": "clamp(1.6rem, 4vw, 3.6rem)", "fontWeight": "700", "letterSpacing": "0.03em", "bg": "#3b1f1f", "fg": "#f4a261", "accent": "#e76f51", "category": "learning" },
+    { "text": "rearrange the furniture in one room.", "fontFamily": "'Caveat', cursive", "fontSize": "clamp(2.6rem, 7vw, 6.5rem)", "fontWeight": "700", "letterSpacing": "0", "bg": "#e8d5c4", "fg": "#3e2723", "accent": "#795548", "category": "exercise" },
+    { "text": "TIME YOURSELF SOLVING A RUBIK'S CUBE.", "fontFamily": "'VT323', monospace", "fontSize": "clamp(2rem, 5.2vw, 4.8rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#0f3460", "fg": "#e94560", "accent": "#f5d547", "category": "no-wifi" },
+    { "text": "Watch the sunset without your phone for twenty minutes.", "fontFamily": "'Abril Fatface', serif", "fontSize": "clamp(1.8rem, 4.6vw, 4.2rem)", "fontWeight": "400", "letterSpacing": "-0.01em", "bg": "#fcb045", "fg": "#3a0ca3", "accent": "#fd1d1d", "category": "no-wifi" },
+    { "text": "origami crane", "subtitle": "Fold a paper crane. Then fold nine more for a flock.", "fontFamily": "'Monoton', cursive", "fontSize": "clamp(3rem, 8vw, 7rem)", "fontWeight": "400", "letterSpacing": "0.04em", "bg": "#caf0f8", "fg": "#03045e", "accent": "#ef476f", "help": ["Find a square piece of paper — 15×15cm is ideal, but any square works.", "Search 'origami crane beginner tutorial' on YouTube and watch the whole thing first.", "Pause the video at each step, fold, then continue — resist skipping ahead."], "category": "creativity" },
+    { "text": "Listen to an entire album with eyes closed and lights off.", "fontFamily": "'Playfair Display', serif", "fontSize": "clamp(1.7rem, 4.4vw, 4rem)", "fontWeight": "900", "letterSpacing": "-0.015em", "bg": "#10002b", "fg": "#c77dff", "accent": "#ffd60a", "category": "no-wifi" },
+    { "text": "DECODE YOUR DREAMS", "subtitle": "Write down every dream you can remember and look for patterns.", "fontFamily": "'Rampart One', cursive", "fontSize": "clamp(2.4rem, 6vw, 5.5rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#240046", "fg": "#ffba08", "accent": "#ff006e", "help": ["Put a notebook and pen on your nightstand before you sleep tonight.", "Write the moment you wake up — even just three words counts as a record.", "After five entries, look for any feeling, place, or person that appears more than once."], "category": "random" },
+    { "text": "Learn to say 'thank you' in ten different languages.", "fontFamily": "'Eczar', serif", "fontSize": "clamp(1.8rem, 4.6vw, 4.2rem)", "fontWeight": "700", "letterSpacing": "-0.01em", "bg": "#f8edeb", "fg": "#22223b", "accent": "#c9184a", "category": "learning" },
+    { "text": "Build a blanket fort and read inside it.", "fontFamily": "'Shrikhand', cursive", "fontSize": "clamp(2rem, 5.4vw, 5rem)", "fontWeight": "400", "letterSpacing": "-0.01em", "bg": "#ffe5b4", "fg": "#6f1d1b", "accent": "#bb3e03", "category": "random" },
+    { "text": "Identify five constellations tonight.", "fontFamily": "'Major Mono Display', monospace", "fontSize": "clamp(1.5rem, 3.8vw, 3.4rem)", "fontWeight": "400", "letterSpacing": "0.04em", "bg": "#03071e", "fg": "#ffba08", "accent": "#9d4edd", "help": ["Download the free Sky Map or Stellarium app on your phone.", "Go outside after dark and give your eyes two full minutes to adjust.", "Start with Orion's Belt — three bright stars in a straight line — then branch out from there."], "category": "learning" },
+    { "text": "OUTSIDE → GO", "subtitle": "Walk a route you've never taken before, no destination needed.", "fontFamily": "'Silkscreen', cursive", "fontSize": "clamp(2rem, 5vw, 4.6rem)", "fontWeight": "400", "letterSpacing": "0.1em", "bg": "#52b788", "fg": "#081c15", "accent": "#ffb703", "category": "exercise" },
+    { "text": "Try to draw a perfect circle freehand. Then ten more.", "fontFamily": "'Fraunces', serif", "fontSize": "clamp(1.7rem, 4.4vw, 4rem)", "fontWeight": "900", "letterSpacing": "-0.02em", "bg": "#ede0d4", "fg": "#7f5539", "accent": "#b08968", "category": "no-wifi" },
+    { "text": "Write a haiku about your kitchen.", "fontFamily": "'UnifrakturMaguntia', cursive", "fontSize": "clamp(2.4rem, 6vw, 5.6rem)", "fontWeight": "400", "letterSpacing": "0", "bg": "#e9c46a", "fg": "#264653", "accent": "#e76f51", "category": "creativity" },
+    { "text": "BREW A NEW KIND OF TEA", "subtitle": "Pick three ingredients from your kitchen and steep them.", "fontFamily": "'Tourney', sans-serif", "fontSize": "clamp(2rem, 5vw, 4.6rem)", "fontWeight": "900", "letterSpacing": "0.04em", "bg": "#386641", "fg": "#f2e8cf", "accent": "#bc4749", "help": ["Raid your kitchen for: citrus peel, cinnamon sticks, ginger, fresh herbs, or dried fruit.", "Combine two or three ingredients and steep in near-boiling water for 5–7 minutes.", "Taste before sweetening — then adjust with honey, sugar, or nothing and taste again."], "category": "no-wifi" },
+    { "text": "Memorize the first verse of a song in a language you don't speak.", "fontFamily": "'Caveat', cursive", "fontSize": "clamp(2rem, 5.2vw, 4.8rem)", "fontWeight": "700", "letterSpacing": "0", "bg": "#fff1e6", "fg": "#22223b", "accent": "#9a8c98", "category": "learning" },
+    { "text": "MAKE A PLAYLIST FOR A FICTIONAL CHARACTER", "fontFamily": "'Bungee Shade', cursive", "fontSize": "clamp(1.7rem, 4.2vw, 3.8rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#ff5d8f", "fg": "#1a1423", "accent": "#00f5d4", "category": "creativity" },
+    { "text": "Research the deepest hole humans have ever dug.", "fontFamily": "'Cinzel', serif", "fontSize": "clamp(1.7rem, 4.4vw, 4rem)", "fontWeight": "700", "letterSpacing": "0.03em", "bg": "#1b263b", "fg": "#e0e1dd", "accent": "#ff9e00", "category": "learning" },
+    { "text": "stretch every joint in your body, slowly.", "fontFamily": "'Caveat', cursive", "fontSize": "clamp(2.4rem, 6vw, 5.6rem)", "fontWeight": "700", "letterSpacing": "0", "bg": "#cbf3f0", "fg": "#2ec4b6", "accent": "#ff9f1c", "category": "exercise" },
+    { "text": "INVENT A NEW WORD AND USE IT IN THREE SENTENCES", "fontFamily": "'Rubik Glitch', cursive", "fontSize": "clamp(1.7rem, 4.4vw, 4rem)", "fontWeight": "400", "letterSpacing": "0.02em", "bg": "#ffbe0b", "fg": "#8338ec", "accent": "#3a86ff", "help": ["Think of a feeling or situation that has no word yet — that gap is your raw material.", "Combine two real words, or add a prefix or suffix: vellichor, sonder, hiraeth all started this way.", "Write three sentences using your word naturally, then say it out loud to test if it sticks."], "category": "random" },
+    { "text": "Try to remember every house you've ever lived in.", "fontFamily": "'Playfair Display', serif", "fontSize": "clamp(1.8rem, 4.6vw, 4.2rem)", "fontWeight": "900", "letterSpacing": "-0.015em", "bg": "#f5ebe0", "fg": "#4a4e69", "accent": "#9a8c98", "category": "random" },
+    { "text": "the long walk", "subtitle": "Walk until your phone hits 20% battery. Then walk back.", "fontFamily": "'Monoton', cursive", "fontSize": "clamp(3rem, 8vw, 7rem)", "fontWeight": "400", "letterSpacing": "0.05em", "bg": "#283618", "fg": "#fefae0", "accent": "#dda15e", "category": "exercise" },
+    { "text": "Compile a list of every smell you remember from childhood.", "fontFamily": "'Abril Fatface', serif", "fontSize": "clamp(1.7rem, 4.4vw, 4rem)", "fontWeight": "400", "letterSpacing": "-0.01em", "bg": "#ffd6a5", "fg": "#6d2e46", "accent": "#bc6c25", "category": "random" }
   ]
   </script>
 
@@ -617,6 +618,107 @@
   /* ───────────────────────────────────────────────────────────────
      RESPONSIVE
      ─────────────────────────────────────────────────────────────── */
+  /* ───────────────────────────────────────────────────────────────
+     CATEGORY FILTER  (top-left dropdown)
+     ─────────────────────────────────────────────────────────────── */
+  .category-filter {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .category-btn {
+    font-family: inherit;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--fg);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.45em;
+    transition: opacity 150ms ease, color var(--theme-transition);
+  }
+
+  .category-btn:hover { opacity: 1; }
+
+  .category-caret {
+    font-size: 0.55rem;
+    opacity: 0.6;
+    display: inline-block;
+    transition: transform 200ms ease;
+  }
+
+  .category-filter.is-open .category-caret {
+    transform: rotate(180deg);
+  }
+
+  .category-menu {
+    position: absolute;
+    top: calc(100% + 0.6rem);
+    left: -0.75rem;
+    background: var(--bg);
+    border: 1.5px solid var(--fg);
+    list-style: none;
+    min-width: 150px;
+    z-index: 20;
+    padding: 0.35rem 0;
+    transition:
+      background-color var(--theme-transition),
+      border-color var(--theme-transition);
+  }
+
+  .category-menu[hidden] { display: none; }
+
+  .cat-item {
+    font-family: inherit;
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--fg);
+    opacity: 0.6;
+    padding: 0.55rem 1rem;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    transition:
+      opacity 100ms ease,
+      background-color 100ms ease,
+      color 100ms ease,
+      color var(--theme-transition);
+  }
+
+  .cat-item:hover {
+    opacity: 1;
+    background: var(--fg);
+    color: var(--bg);
+  }
+
+  .cat-item.is-active {
+    opacity: 1;
+  }
+
+  .cat-count {
+    font-size: 0.6rem;
+    opacity: 0.5;
+    letter-spacing: 0.05em;
+  }
+
+  .cat-item:hover .cat-count { opacity: 0.7; }
+
+  /* ───────────────────────────────────────────────────────────────
+     RESPONSIVE
+     ─────────────────────────────────────────────────────────────── */
   @media (max-width: 600px) {
     body { padding: 1.5rem 1rem; }
     .corner { width: 16px; height: 16px; }
@@ -633,7 +735,21 @@
   <div class="corner corner-br"></div>
 
   <header class="page-header">
-    <span><span class="accent-dot"></span>Bored?</span>
+    <div class="category-filter" id="category-filter">
+      <span class="accent-dot"></span>
+      <button class="category-btn" id="category-btn" type="button">
+        <span id="category-label">All</span>
+        <span class="category-caret">▾</span>
+      </button>
+      <ul class="category-menu" id="category-menu" hidden>
+        <li><button class="cat-item is-active" data-cat="all" type="button">All <span class="cat-count" id="count-all"></span></button></li>
+        <li><button class="cat-item" data-cat="no-wifi" type="button">No WiFi <span class="cat-count" id="count-no-wifi"></span></button></li>
+        <li><button class="cat-item" data-cat="exercise" type="button">Exercise <span class="cat-count" id="count-exercise"></span></button></li>
+        <li><button class="cat-item" data-cat="learning" type="button">Learning <span class="cat-count" id="count-learning"></span></button></li>
+        <li><button class="cat-item" data-cat="creativity" type="button">Creativity <span class="cat-count" id="count-creativity"></span></button></li>
+        <li><button class="cat-item" data-cat="random" type="button">Very Random <span class="cat-count" id="count-random"></span></button></li>
+      </ul>
+    </div>
     <span>Vol. 01</span>
   </header>
 
@@ -700,20 +816,24 @@
   // DOM REFERENCES
   // ══════════════════════════════════════════════════════════════
   const el = {
-    root:       document.documentElement,
-    counter:    document.getElementById('activity-counter'),
-    activity:   document.getElementById('activity'),
-    text:       document.getElementById('activity-text'),
-    subtitle:   document.getElementById('activity-subtitle'),
-    button:     document.getElementById('next-button'),
-    doneButton: document.getElementById('done-button'),
-    helpLink:   document.getElementById('help-link'),
-    doneCount:  document.getElementById('done-count'),
-    backdrop:   document.getElementById('panel-backdrop'),
-    helpPanel:  document.getElementById('help-panel'),
-    helpSteps:  document.getElementById('help-steps'),
-    logPanel:   document.getElementById('log-panel'),
-    logEntries: document.getElementById('log-entries'),
+    root:            document.documentElement,
+    counter:         document.getElementById('activity-counter'),
+    activity:        document.getElementById('activity'),
+    text:            document.getElementById('activity-text'),
+    subtitle:        document.getElementById('activity-subtitle'),
+    button:          document.getElementById('next-button'),
+    doneButton:      document.getElementById('done-button'),
+    helpLink:        document.getElementById('help-link'),
+    doneCount:       document.getElementById('done-count'),
+    backdrop:        document.getElementById('panel-backdrop'),
+    helpPanel:       document.getElementById('help-panel'),
+    helpSteps:       document.getElementById('help-steps'),
+    logPanel:        document.getElementById('log-panel'),
+    logEntries:      document.getElementById('log-entries'),
+    categoryFilter:  document.getElementById('category-filter'),
+    categoryBtn:     document.getElementById('category-btn'),
+    categoryLabel:   document.getElementById('category-label'),
+    categoryMenu:    document.getElementById('category-menu'),
   };
 
   // ══════════════════════════════════════════════════════════════
@@ -723,23 +843,56 @@
   let currentIndex      = -1;
   const recentlyShown   = new Set();
   const STORAGE_KEY     = 'now-what-completions';
+  let currentCategory   = 'all';
+
+  const CATEGORY_LABELS = {
+    all:        'All',
+    'no-wifi':  'No WiFi',
+    exercise:   'Exercise',
+    learning:   'Learning',
+    creativity: 'Creativity',
+    random:     'Very Random',
+  };
+
+  // ══════════════════════════════════════════════════════════════
+  // CATEGORY FILTER
+  // ══════════════════════════════════════════════════════════════
+  function getPool() {
+    if (currentCategory === 'all') return activities.map((_, i) => i);
+    return activities.reduce((acc, a, i) => {
+      if (a.category === currentCategory) acc.push(i);
+      return acc;
+    }, []);
+  }
+
+  function populateCounts() {
+    const cats = ['all', 'no-wifi', 'exercise', 'learning', 'creativity', 'random'];
+    cats.forEach(cat => {
+      const el2 = document.getElementById(`count-${cat}`);
+      if (!el2) return;
+      const n = cat === 'all' ? activities.length : activities.filter(a => a.category === cat).length;
+      el2.textContent = n;
+    });
+  }
 
   // ══════════════════════════════════════════════════════════════
   // SELECTION
   // ══════════════════════════════════════════════════════════════
   function pickNextIndex() {
-    if (recentlyShown.size >= activities.length) {
-      recentlyShown.clear();
+    const pool = getPool();
+    if (pool.length === 0) return previousIndex >= 0 ? previousIndex : 0;
+
+    // Reset cycle once every pool item has been shown
+    const shownInPool = pool.filter(i => recentlyShown.has(i)).length;
+    if (shownInPool >= pool.length) {
+      pool.forEach(i => recentlyShown.delete(i));
     }
 
-    let index;
-    do {
-      index = Math.floor(Math.random() * activities.length);
-    } while (
-      activities.length > 1 &&
-      (index === previousIndex || recentlyShown.has(index))
-    );
+    const candidates = pool.filter(i => i !== previousIndex && !recentlyShown.has(i));
+    const source = candidates.length > 0 ? candidates : pool.filter(i => i !== previousIndex);
+    const finalSource = source.length > 0 ? source : pool;
 
+    const index = finalSource[Math.floor(Math.random() * finalSource.length)];
     recentlyShown.add(index);
     previousIndex = index;
     return index;
@@ -772,8 +925,10 @@
   }
 
   function updateCounter(index) {
-    const current = String(index + 1).padStart(2, '0');
-    const total   = String(activities.length).padStart(2, '0');
+    const pool    = getPool();
+    const pos     = pool.indexOf(index);
+    const current = String(pos >= 0 ? pos + 1 : 1).padStart(2, '0');
+    const total   = String(pool.length).padStart(2, '0');
     el.counter.textContent = `No. ${current} / ${total}`;
   }
 
@@ -927,14 +1082,53 @@
   document.getElementById('help-got-it').addEventListener('click', closeAllPanels);
   document.getElementById('log-close').addEventListener('click', closeAllPanels);
 
+  // ── Category dropdown ──
+  function closeCategoryMenu() {
+    el.categoryMenu.hidden = true;
+    el.categoryFilter.classList.remove('is-open');
+  }
+
+  el.categoryBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const opening = el.categoryMenu.hidden;
+    el.categoryMenu.hidden = !opening;
+    el.categoryFilter.classList.toggle('is-open', opening);
+  });
+
+  document.querySelectorAll('.cat-item').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const cat = btn.dataset.cat;
+      currentCategory = cat;
+      recentlyShown.clear();
+      previousIndex = -1;
+
+      // Update label
+      el.categoryLabel.textContent = CATEGORY_LABELS[cat];
+
+      // Update active state
+      document.querySelectorAll('.cat-item').forEach(b => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+
+      closeCategoryMenu();
+      showNextActivity();
+    });
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!el.categoryFilter.contains(e.target)) closeCategoryMenu();
+  });
+
   document.addEventListener('keydown', (event) => {
     if (event.code === 'Escape') {
+      closeCategoryMenu();
       closeAllPanels();
       return;
     }
     const panelOpen = el.helpPanel.classList.contains('is-open') ||
                       el.logPanel.classList.contains('is-open');
-    if (!panelOpen && (event.code === 'Space' || event.code === 'Enter')) {
+    const menuOpen  = !el.categoryMenu.hidden;
+    if (!panelOpen && !menuOpen && (event.code === 'Space' || event.code === 'Enter')) {
       event.preventDefault();
       showNextActivity();
     }
@@ -943,6 +1137,7 @@
   // ══════════════════════════════════════════════════════════════
   // INIT
   // ══════════════════════════════════════════════════════════════
+  populateCounts();
   updateDoneCount();
   showNextActivity();
   </script>
